@@ -1,9 +1,9 @@
-function A(){
+function A() {
     var a = 1;
-    function B(){
+    function B() {
         var b = 2;
-        function C(){
-            console.log(a,b)
+        function C() {
+            console.log(a, b)
         }
         C();
     }
@@ -13,9 +13,9 @@ function A(){
 A();
 
 
-function time(){
+function time() {
     for (var i = 0; i < 5; i++) {
-        setTimeout(function() {
+        setTimeout(function () {
             console.log(new Date, i);
         }, 1000);
     }
