@@ -1,15 +1,14 @@
-
-
-function valueFunc(){
-    console.log(a,b)
-    var a = 1;
-    function b(){
-        console.log(".....");
-    }
-}
-
+console.log(a);
 var a = 1;
-function a(){
+
+function a() {
     console.log(1)
 }
+a();
+
+
+
+a => function() {}
+    //a = undefined;
+a = 1;
 a();

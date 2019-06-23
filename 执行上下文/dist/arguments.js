@@ -1,4 +1,12 @@
-function argTest(a){
-    console.log(arguments);
+var a = 10;
+
+var obj = {
+    a: 20,
+    func: function fn() {
+        console.log(this.a);
+    }
 }
-argTest(1,2);
+
+var func = obj.func;
+func();
+obj.func();
