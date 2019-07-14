@@ -1,4 +1,4 @@
-#原型与原型链
+# 原型与原型链
 
 ## 一、对象的定义
 >在ECMAScript-262中，对象被定义为“无序属性的集合，其属性可以包含基本值，对象或者函数”。
@@ -232,3 +232,7 @@ p1.getName(); // this is constructor.
         
     }
 ```
+>那么我们可以用如下的图来表示这个函数的原型链。
+![原型链](https://upload-images.jianshu.io/upload_images/599584-f4ca22c5db668eaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+>其中add是Function对象的实例。而Function的原型对象同时又是Object原型的实例。这样就构成了一条原型链。原型链的访问，其实跟作用域链有很大的相似之处，他们都是一次单向的查找过程。因此实例对象能够通过原型链，访问到处于原型链上对象的所有属性与方法。这也是foo最终能够访问到处于Object原型对象上的toString方法的原因。
