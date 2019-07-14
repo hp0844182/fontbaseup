@@ -3,10 +3,13 @@
 
 所以今天分享一下前端的几个重要知识点，也是前端面试基本上必考的几个点。
 
-## <a href="./内存空间/README.md">一、JS内存空间</a>
+## <a href="./firstWeek/内存空间/README.md">一、JS内存空间</a>
 
-## <a href="./执行上下文/README.md">二、执行上下文</a> 
+## <a href="./firstWeek/执行上下文/README.md">二、执行上下文</a> 
 
-## <a href="./闭包/README.md">三、闭包</a>
+## <a href="./firstWeek/闭包/README.md">三、闭包</a>
+
+## <a href="./secondWeek/原型与原型链/README.md">四、面向对象、原型与原型链</a>
+## <a href="./secondWeek/函数柯里化/README.md">五、函数柯里化</a>
 
   
