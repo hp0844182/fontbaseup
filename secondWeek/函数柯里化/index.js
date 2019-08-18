@@ -1,28 +1,14 @@
-/**
- * 
- * 函數柯里化
- */
-// 例子①：
-function curry(func) {
-    var args = [];
-    return function fn() {
-        var argArr = [].slice.call(arguments)
-        if (arguments.length > 0) {
-            args = args.concat(argArr);
-            return fn;
-        } else {
-            const val = func.apply(null, args)
-            args = []
-            return val;
-        }
+var aa = {
+    i: 10,
+    valueOf: function() {
+        console.log('valueOf');
+        return this.i;
     }
-}
-var add = curry(function() {
-    var sum = 0;
-    for (var i = 0; i < arguments.length; i++) {
-        sum += arguments[i];
-    }
-    return sum;
-});
+};
 
-// 例子②
+alert(aa); // 10 valueOf
+alert(+aa); // 10 valueOf
+alert('' + aa); // 10 valueOf
+alert(String(aa)); // 10 valueOf
+alert(Number(aa)); // 10 valueOf
+alert(aa == '10'); // true valueOf
